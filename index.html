@@ -1,0 +1,104 @@
+<!doctype html>
+<html data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    </script>
+    <script src="https://kit.fontawesome.com/e3f461dde5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main class="flex flex-row">
+        <aside class="bg-[#0E1B34] w-[450px]">
+            <div class="flex justify-center py-5 px-4">
+                <img src="images/logo/logo.png" alt="" class="w-36">
+            </div>
+        </aside>
+        <section class="w-full">
+            <header>
+                <div class="navbar bg-base-100 w-full py-5">
+                    <div class="flex-row justify-between items-center gap-2 w-full">
+                        <div class="form-control">
+                            <input type="text" placeholder="Search" class="input input-bordered" />
+                        </div>
+                        <div class="">
+                            <img src="images/logo/logo1.svg" alt="" class="w-16">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="bg-[#D9D9D9] py-8 px-10">
+                <h2 class="text-5xl">Hello User!!</h2>
+
+                <div id="billionears-container" class="mt-12">
+                    <div class="overflow-x-auto w-full">
+                        <table class="table w-full">
+                            <!-- head -->
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Citizenship</th>
+                                    <th>Industry</th>
+                                    <th>Wealth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="avatar">
+                                                <div class="mask mask-squircle w-12 h-12">
+                                                    <img src="/tailwind-css-component-profile-2@56w.png"
+                                                        alt="Avatar Tailwind CSS Component" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="font-bold">Hart Hagerty</div>
+                                                <div class="text-sm opacity-50">United States</div>
+                                            </div>
+                                            <i class="fa-solid fa-eye"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        Zemlak, Daniel and Leannon
+                                        <br />
+                                        <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                                    </td>
+                                    <td>Purple</td>
+                                    <th>
+                                        <button class="btn btn-ghost btn-xs">details</button>
+                                    </th>
+                                </tr>
+                                <!-- row 2 -->
+                            </tbody>
+                            <!-- foot -->
+                            <tfoot>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Citizenship</th>
+                                    <th>Industry</th>
+                                    <th>Wealth</th>
+                                </tr>
+                            </tfoot>
+
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
