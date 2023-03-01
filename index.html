@@ -36,7 +36,7 @@
             <section class="bg-[#D9D9D9] py-8 px-10">
                 <h2 class="text-5xl">Hello User!!</h2>
 
-                <div id="billionears-container" class="mt-12">
+                <div class="mt-12">
                     <div class="overflow-x-auto w-full">
                         <table class="table w-full">
                             <!-- head -->
@@ -49,36 +49,8 @@
                                     <th>Wealth</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <!-- row 1 -->
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <div class="flex items-center space-x-3">
-                                            <div class="avatar">
-                                                <div class="mask mask-squircle w-12 h-12">
-                                                    <img src="/tailwind-css-component-profile-2@56w.png"
-                                                        alt="Avatar Tailwind CSS Component" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="font-bold">Hart Hagerty</div>
-                                                <div class="text-sm opacity-50">United States</div>
-                                            </div>
-                                            <i class="fa-solid fa-eye"></i>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        Zemlak, Daniel and Leannon
-                                        <br />
-                                        <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                                    </td>
-                                    <td>Purple</td>
-                                    <th>
-                                        <button class="btn btn-ghost btn-xs">details</button>
-                                    </th>
-                                </tr>
-                                <!-- row 2 -->
+                            <tbody id="billionears-container">
+
                             </tbody>
                             <!-- foot -->
                             <tfoot>
@@ -93,11 +65,24 @@
 
                         </table>
                     </div>
+                    <!-- Modal -->
+                    <input type="checkbox" id="billionear-details" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl">
+                            <label for="billionear-details"
+                                class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                            <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                            <p class="py-4">You've been selected for a chance to get one year of subscription to use
+                                Wikipedia for free!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
     </main>
 
+    <script src="utilities.js"></script>
     <script src="app.js"></script>
 </body>
 
